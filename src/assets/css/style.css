@@ -1,0 +1,356 @@
+:root {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    --netflix-color: rgb(229, 9, 20);
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --gray-color: rgb(170, 170, 170);
+    --gray2-color: rgb(34, 34, 34);
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Netflix Sans', 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--black-color);
+    color: var(--white-color);
+
+}
+
+.container {
+    height: 75vh;
+    margin-inline: auto;
+    border-bottom: 0.8rem solid var(--gray2-color);
+}
+
+header {
+    padding-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 5.6rem;
+    padding-top: 0.8rem;
+}
+
+.logo {
+    width: 16.7rem;
+    height: 4.9rem;
+}
+
+.nav-right {
+    height: 5.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.select-lang {
+    box-sizing: border-box;
+    width: 9.4rem;
+    height: 3.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    margin-right: 3.2rem;
+}
+
+.select-lang select {
+    box-sizing: border-box;
+
+    /* position: absolute; */
+    height: 3.6rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: 0.1rem solid var(--gray-color);
+    border-radius: 0.2rem;
+    color: var(--white-color);
+
+}
+
+.signin {
+    padding: 0.7rem 1.7rem;
+    width: 8.4rem;
+    height: 3.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    background: var(--netflix-color);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.signin a {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    padding-block: auto;
+}
+
+.story-card {
+    max-width: 95rem;
+    margin-top: 7rem;
+    margin-inline: auto;
+}
+
+.story-card-text {
+    max-width: 68.6rem;
+    padding-block: 7.5rem;
+    margin-inline: auto;
+    color: var(--white-color);
+}
+
+.story-card-title {
+    max-width: 64rem;
+    margin-inline: auto;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+.story-card-subtitle {
+    max-width: 64rem;
+    height: 3.3rem;
+    margin-block: 1.6rem;
+    margin-inline: auto;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    text-align: center;
+}
+
+.email-form {
+    max-width: 95rem;
+    padding-top: 0.85rem;
+    text-align: center;
+}
+
+.form-title {
+    padding-bottom: 2rem;
+    font-size: 1.92rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+}
+
+.field-email-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.field-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textField {
+    min-width: 45rem;
+    padding: 10px 10px 0;
+    max-width: 50rem;
+    min-height: 60px;
+    border: solid 1px #8c8c8c;
+}
+
+.btn-form {
+    background-color: var(--netflix-color);
+    font-size: 2.6rem;
+    min-height: 6rem;
+    padding: 0 2.6rem;
+    border: none;
+    border-radius: 0.2rem;
+    border-left: 0.1rem solid #333;
+    color: var(--white-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.background {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-gradient {
+    background: rgba(0, 0, 0, .4);
+    font-size: 1.6rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, .8) 100%);
+
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+hr {
+    border-top: 8px solid var(--gray2-color);
+}
+
+@media screen and (max-width:949px) {
+    nav {
+        margin-inline: 4.5rem;
+    }
+
+    .story-card {
+        margin-top: 0rem;
+    }
+
+    .story-card-text {
+        margin-inline: auto;
+        padding: 0;
+    }
+
+    .story-card-title {
+        margin-inline: auto;
+        line-height: 5.5rem;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+    }
+
+    .email-form {
+        max-width: 45rem;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .field-email-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .field-email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    .textField {
+        min-width: 45rem;
+        padding: 10px 10px 0;
+        max-width: 50rem;
+        min-height: 4.8rem;
+        border: solid 1px #8c8c8c;
+    }
+
+    .btn-form {
+        background-color: var(--netflix-color);
+        font-size: 1.6rem;
+        min-height: 4.8rem;
+        max-width: 11.5rem;
+        padding: 0.4rem 1.6rem;
+        margin-inline: auto;
+        border: none;
+        border-left: 0.1rem solid #333;
+        color: var(--white-color);
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:549px) {
+    .story-card {
+        padding: 5rem 1.6rem;
+        margin-inline: auto;
+    }
+
+    .story-card-title {
+        font-size: 2.8rem;
+    }
+
+    .story-card-subtitle {
+        font-size: 1.8rem;
+        margin-block: 1.6rem;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        padding: 0 10%;
+    }
+}
